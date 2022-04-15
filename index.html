@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Share Splitter</title>
+    <script defer async src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- header section-->
+    <header>
+        <div id="logo">
+            <a href="#">Share Splitter</a>
+        </div>
+        <nav id="nav-links">
+
+        </nav>
+    </header>
+    <!--end of header section-->
+
+    <!--main section-->
+    <main>
+        <section>
+            <h1>
+                This app splits company shares amongst share holders based on percentage assigned to each holder
+            </h1>
+            <div id="app-view">
+                <div id="summary">
+                    <h2>Summary</h2>
+                    <div class="">
+
+                        <table id="share_holder_summary">
+                            <thead>
+                            <th>Share holder</th>
+                            <th>Amount</th>
+                            <th>Percentage</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Brian</td>
+                                <td>$4000</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <td>Brenda</td>
+                                <td>$2000</td>
+                                <td>20%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="">
+                            <p>Pool : $<span id="pool"></span></p>
+                            <p>Total shares  : 100%</p>
+                            <p>Available shares  : <span id="available_shares">40</span>% </p>
+                        </div>
+                    </div>
+                </div>
+
+                <aside id="add-share-holder">
+                    <h3>
+                        Add new share holder
+                    </h3>
+                    <form method="post" id="add-share-holder-form" name="add_share_holder_form">
+                        <div>
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="name" id="name" value="">
+                        </div>
+
+                        <div>
+                            <label for="percentage">Percentage</label>
+                        </div>
+                        <div>
+                            <input type="number" name="percentage" id="percentage" value=""> out of <span id="available">40%</span>
+                        </div>
+                        <div>
+                            <input type="submit" value="Add" id="form-btn">
+                        </div>
+                    </form>
+                </aside>
+            </div>
+
+        </section>
+    </main>
+    <!-- end of main section-->
+</body>
+</html>
